@@ -1,0 +1,2 @@
+module GoShopping_App {
+}
