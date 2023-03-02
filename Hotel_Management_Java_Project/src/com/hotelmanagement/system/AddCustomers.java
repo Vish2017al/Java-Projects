@@ -21,6 +21,7 @@ public class AddCustomers extends JFrame implements ActionListener {
 		JLabel text = new JLabel("NEW CUSTOMER FROM");
 		text.setBounds(100,20,300,30);
 		text.setForeground(Color.BLACK);
+		text.setBackground(Color.BLUE);
 		text.setFont(new Font("Raleway",Font.PLAIN,20));
 		add(text); 
 		
@@ -153,14 +154,14 @@ public class AddCustomers extends JFrame implements ActionListener {
 		add(back);
 		
 
-		ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("icons/fifth.png"));
-        Image i2=i1.getImage().getScaledInstance(300,400,Image.SCALE_DEFAULT);
+		ImageIcon i1  = new ImageIcon(ClassLoader.getSystemResource("icons/cu.jpg"));
+        Image i2=i1.getImage().getScaledInstance(600,400,Image.SCALE_DEFAULT);
         ImageIcon i3= new ImageIcon(i2);
         JLabel image = new JLabel(i3);
-        image.setBounds(400,50,300,400);
+        image.setBounds(450,5,400,530);
         add(image);
 					
-		setBounds(350,200,800,550);
+		setBounds(350,200,900,550);
 		setVisible(true);
 		
 	}

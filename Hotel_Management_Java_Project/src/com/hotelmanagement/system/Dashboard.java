@@ -31,6 +31,7 @@ public class Dashboard extends JFrame implements ActionListener {
 		
 		JMenu hotel =new JMenu("HOTEL MANAGEMENT");
 		hotel.setForeground(Color.RED);
+		hotel.setBackground(Color.black);
 		mb.add(hotel);
 		
 		JMenuItem reception =new JMenuItem("RECEPTION");

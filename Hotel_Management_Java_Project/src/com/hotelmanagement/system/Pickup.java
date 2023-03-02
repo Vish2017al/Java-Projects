@@ -22,7 +22,7 @@ public class Pickup extends JFrame implements ActionListener {
 		getContentPane().setBackground(Color.WHITE);
 		setLayout(null);
 		
-		JLabel lbltext =new JLabel("Pikup Service");
+		JLabel lbltext =new JLabel("Pickup Service");
 		lbltext.setBounds(400,30,200,30);
 		lbltext.setFont(new Font("Tahoma",Font.BOLD,14));
 		add(lbltext);
