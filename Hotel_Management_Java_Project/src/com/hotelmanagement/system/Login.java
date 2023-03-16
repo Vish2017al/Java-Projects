@@ -46,7 +46,7 @@ public class Login extends JFrame implements ActionListener {
 		Signup.addActionListener(this);
 		add(Signup);
 		
-		 cancel =new JButton("Cancel");
+		 cancel =new JButton("Forgot Pass");
 		cancel.setBounds(320,200,150,30);
 		cancel.setBackground(Color.BLACK);
 		cancel.setForeground(Color.WHITE);
@@ -97,6 +97,7 @@ public class Login extends JFrame implements ActionListener {
 			}
 		}else if (ae.getSource()== cancel) {
 			setVisible(false);
+			new Forgot_Pass();
 		}
 		
 	}

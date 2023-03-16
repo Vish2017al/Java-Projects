@@ -36,7 +36,7 @@ public class Signup extends JFrame implements ActionListener{
 			tfname.setBounds(150,60,150,25);
 			add(tfname); 
 			
-			JLabel lblmail =new JLabel("Mail");
+			JLabel lblmail =new JLabel("Email ID");
 			lblmail .setBounds(40,100,150,25);
 			lblmail .setFont(new Font("Raleway",Font.PLAIN,20));
 			add(lblmail );
@@ -123,50 +123,14 @@ public class Signup extends JFrame implements ActionListener{
 
 	@Override
 	public void actionPerformed(ActionEvent ae) {
-//		// TODO Auto-generated method stub
-//		 if (ae.getSource() == submit ) {
-//				setVisible(false);
-//				new  Login();
-//			}
-//			if(ae.getSource()== submit) {
-//				String name=tfname.getText();
-//				String mail=tfmail.getText();
-//			    String username=tfusername.getText();
-//				String password=tfpassword.getText();
-//				String repassword= cpassword.getText();
-//				String Mob_No=tfnumber.getText();
-//				new Login();
-//			
-//				
-//				try {
-//					Conn c= new Conn();
-//					String query = "INSERT INTO signup values ('"+ name+"','"+mail+"', '"+ username+"','"+ password+"','"+repassword+"','"+Mob_No+"')";
-//					
-//					ResultSet rs= c.s.executeQuery(query);
-//					
-//					if(rs.next()) {
-//						setVisible(false);
-//						new Login();
-//					}else {
-//						JOptionPane.showMessageDialog(null,"Signup Successfully");
-//						setVisible(false);
-//					}
-//					
-//				}catch (Exception e) {
-//					e.printStackTrace();
-//					
-//				}
-//			}else if (ae.getSource()== cancel) {
-//				setVisible(false);
-//			}
-//					
-//		
+
 		String name=tfname.getText();
 		String mail=tfmail.getText();
 	    String Username=tfusername.getText();
 		String password=tfpassword.getText();
 		String repassword= cpassword.getText();
 		String Mob_No=tfnumber.getText();
+		setVisible(false);
 		new Login();
 	
         
@@ -179,17 +143,17 @@ public class Signup extends JFrame implements ActionListener{
           }
           
           if(Username.equals("")) {
-        	  JOptionPane.showMessageDialog(null, "aadhar should not be empty");
+        	  JOptionPane.showMessageDialog(null, "Email should not be empty");
         	  return;
           }
           
           if(mail.equals("")) {
-        	  JOptionPane.showMessageDialog(null, "email should not be empty");
+        	  JOptionPane.showMessageDialog(null, "Username should not be empty");
         	  return;
           }
           
           if(Mob_No.equals("")) {
-        	  JOptionPane.showMessageDialog(null, "phone should not be empty");
+        	  JOptionPane.showMessageDialog(null, "Mob_No should not be empty");
         	  return;
           }
         
@@ -210,6 +174,7 @@ public class Signup extends JFrame implements ActionListener{
           } catch (Exception e) {
               e.printStackTrace();
           }
+          setVisible(false);
           }
        
           else if (ae.getSource() == cancel){
